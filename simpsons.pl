@@ -15,7 +15,8 @@ female(ling).
 
 parent(abraham, herb).
 parent(abraham, homer).
-parent(mona, herb).
+
+parent(mona, herb).
 parent(mona, homer).
 
 parent(clancy, marge).
@@ -77,24 +78,3 @@ ancestor(Ancestor, Descendant) :-
 % Recursive case
 ancestor(Ancestor, Descendant) :-
     parent(Ancestor, Middle), ancestor(Middle, Descendant).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
