@@ -78,3 +78,105 @@ ancestor(Ancestor, Descendant) :-
 % Recursive case
 ancestor(Ancestor, Descendant) :-
     parent(Ancestor, Middle), ancestor(Middle, Descendant).
+
+/*
+QUERY TESTS
+
+1. father
+?- father(homer, bart).
+true.
+
+?- father(selma, ling).
+false.
+
+
+
+2. mother
+?- mother(marge, lisa).
+true.
+
+?- mother(homer, bart).
+false.
+
+
+
+3. son
+?- son(bart, homer).
+true.
+
+?- son(lisa, homer).
+false.
+
+
+
+4. daughter
+?- daughter(ling, selma).
+true.
+
+?- daughter(bart, marge).
+false.
+
+
+
+5. brother
+?- brother(herb, homer).
+true.
+
+?- brother(bart, bart).
+false.
+
+
+
+6. sister
+?- sister(patty, marge).
+true.
+
+?- sister(lisa, lisa).
+false.
+
+
+
+7. grandfather
+?- grandfather(abraham, bart).
+true.
+
+?- grandfather(homer, ling).
+false.
+
+
+
+8. aunt
+?- aunt(selma, lisa).
+true.
+
+?- aunt(marge, bart).
+false.
+
+
+
+9. uncle
+?- uncle(herb, maggie).
+true.
+
+?- uncle(homer, bart).
+false.
+
+
+
+10. cousin
+?- cousin(ling, bart).
+true.
+
+?- cousin(lisa, bart).
+false.
+
+
+
+11. ancestor
+?- ancestor(mona, maggie).
+true.
+
+?- ancestor(bart, abraham).
+false.
+
+*/
