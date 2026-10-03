@@ -26,10 +26,10 @@ parent(jackie, marge).
 parent(jackie, patty).
 parent(jackie, selma).
 
-parent(homer, brat).
+parent(homer, bart).
 parent(homer, lisa).
 parent(homer, maggie).
-parent(marge, brat).
+parent(marge, bart).
 parent(marge, lisa).
 parent(marge, maggie).
 
